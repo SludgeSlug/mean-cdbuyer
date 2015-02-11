@@ -1,0 +1,11 @@
+<h1>Results for {{searchterm}}</h1>
+<ul>
+    <li ng-repeat="album in albums">
+        <div>
+            <span>{{album.artist}}</span>
+            <span>{{album.title}}</span>
+            <span>{{album.price}}</span>
+            <a href="#">Add to basket</a>
+        </div>
+    </li>
+</ul>
