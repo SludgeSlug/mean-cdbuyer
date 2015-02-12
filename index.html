@@ -7,13 +7,14 @@
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/resultsController.js"></script>
   <script src="/scripts/controllers/searchController.js"></script>
+  <script src="/scripts/controllers/basketController.js"></script>
   <script src="/scripts/controllers/mainController.js"></script>
   <script src="/scripts/services/basketService.js"></script>
 </head>
 <body ng-controller="mainController">
     <header>
         <p>CD Buyer</p>
-        <p>Basket ({{numberOfBasketItems}})</p>
+        <p><a href="#/basket">Basket ({{numberOfBasketItems}})</a></p>
     </header>  
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
     <div id="main">

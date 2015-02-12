@@ -1,5 +1,5 @@
-app.controller('mainController', ['$rootScope', 'basketService', function($rootScope, basketService) {
+app.controller('mainController', function($rootScope, $window, basketService) {
     
      $rootScope.numberOfBasketItems = basketService.numberOfItems();
-    
-}]);
+
+});

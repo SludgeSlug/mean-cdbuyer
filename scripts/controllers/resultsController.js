@@ -4,8 +4,8 @@ app.controller('resultsController', function($scope, $rootScope, $routeParams, b
     $scope.albums = getTestData();
     
     $scope.addToBasket = function(album) {
-       basketService.add(album);
-       $rootScope.numberOfBasketItems = basketService.numberOfItems();
+        basketService.add(album);
+        $rootScope.numberOfBasketItems = basketService.numberOfItems();
     };
     
 });

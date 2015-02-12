@@ -9,4 +9,8 @@ app.service('basketService', ['$rootScope', function($rootScope) {
     this.numberOfItems = function(){
         return basket.length;
     };
+    
+    this.getBasketContents = function() {
+        return basket;
+    }
 }]);

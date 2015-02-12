@@ -1,11 +1,12 @@
-<h1>Results for {{searchterm}}</h1>
+<h1>Basket</h1>
 <ul>
     <li ng-repeat="album in albums">
         <div>
             <span>{{album.artist}}</span>
             <span>{{album.title}}</span>
             <span>{{album.price}}</span>
-            <a href="#" ng-click="addToBasket(album)">Add to basket</a>
         </div>
     </li>
 </ul>
+
+<a href="#" ng-click="searchAgain()">Search again</a>
