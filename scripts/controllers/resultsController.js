@@ -1,9 +1,14 @@
-app.controller('resultsController', ['$scope','$routeParams', function($scope, $routeParams) {
+app.controller('resultsController', function($scope, $rootScope, $routeParams, basketService) {
     
     $scope.searchterm = $routeParams.searchterm;
     $scope.albums = getTestData();
     
-}]);
+    $scope.addToBasket = function(album) {
+       basketService.add(album);
+       $rootScope.numberOfBasketItems = basketService.numberOfItems();
+    };
+    
+});
 
 function getTestData() {
     
